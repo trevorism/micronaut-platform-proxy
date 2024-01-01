@@ -32,7 +32,7 @@ public class PlatformService {
     }
 
     public String getPlatformUrl() {
-        if(platformUrl != null){
+        if(platformUrl == null){
             platformUrl = fetchPlatformUrl();
         }
         return platformUrl;
